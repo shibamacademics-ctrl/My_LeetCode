@@ -3,7 +3,6 @@ class TreeNode5 {
     TreeNode5 left;
     TreeNode5 right;
 
-    TreeNode5() {}
 
     TreeNode5(int val) {
         this.val = val;
