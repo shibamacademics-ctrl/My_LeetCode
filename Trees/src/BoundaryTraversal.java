@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.ArrayList;
+
 class TreeNode12 {
     int val;
     TreeNode12 left;
@@ -19,7 +20,7 @@ class BoundaryTraversal {
     public static boolean isLeaf(TreeNode12 node){
         return node.left==null && node.right==null;
     }
-    public static void addLeftBoundary(TreeNode12 root,ArrayList<Integer> result){
+    public static void addLeftBoundary(TreeNode12 root, ArrayList<Integer> result){
         TreeNode12 curr = root.left;
         while(curr!=null){
             if(!isLeaf(curr)){
